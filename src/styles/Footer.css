@@ -1,0 +1,13 @@
+/* Footer.css */
+
+.footer {
+  background-color: none;
+  text-align: center;
+  padding: 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #ffffff;
+  position: relative; /* Set position to relative to contain the background image */
+}
+
+

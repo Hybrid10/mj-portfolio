@@ -1,0 +1,2 @@
+- [Github repository](https://github.com/Hybrid10/mj-portfolio)
+- [Deployat projekt](https://marcusjosefsson.netlify.app/)

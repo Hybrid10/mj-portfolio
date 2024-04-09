@@ -1,0 +1,21 @@
+/* AnimatedBackground.css */
+.animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10; /* Ensures the canvas is behind other content */
+  }
+  
+  
+  #particle-canvas {
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    min-width: 1920px;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(45, 45, 45) 0%,rgb(5, 5, 5) 100%);
+    vertical-align: middle;
+  }
+  

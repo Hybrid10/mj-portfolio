@@ -1,0 +1,316 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  background: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.intro {
+  width: 40%;
+  text-align: left;
+  color: var(--text-color);
+  opacity: 0;
+  transform: translateY(10%);
+  animation: 1s anim-lineSide ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateX(60%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes anim-lineSide {
+  0% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10%);
+  }
+}
+
+/* Other styles for .hero h1 go here */
+.intro h1 {
+  font-size: 62px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: var(--head-color);
+  font-weight: 600;
+}
+
+.hero h3 {
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-weight: 300;
+
+}
+
+.intro-subtitle {
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.greeting-text {
+  line-height: 1.5;
+  margin: 10px 0;
+  margin-right: 20px;
+  color: rgb(239, 239, 239);
+  font-weight: 500;
+  text-align:justify;
+  font-size: 22px;
+  font-weight: 300;
+
+}
+
+.hero-animation {
+  width: 400px;
+  margin-right: 40px; 
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.hero-animation img {
+  max-width: 100%; /* Set the maximum width of the image to fit the container */
+  max-height: 100%; /* Set the maximum height of the image to fit the container */
+  border-radius: 100%;
+  box-shadow: 0 0 10px 6px rgba(134, 194, 50, 0.5); /* Glowing white background */
+  animation: 1s anim-lineUp ease-out;
+  animation-fill-mode:none; /* Keeps the final state after animation ends */
+
+}
+
+
+
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(80%);
+  animation: 1s anim-lineUp ease-out;
+  animation-fill-mode: forwards; /* Keeps the final state after animation ends */
+}
+
+.socials a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.github-img {
+  background-color: rgb(134, 194, 50);
+}
+
+
+.socials img {
+  width: 40px;
+}
+
+.socials a:hover {
+  transform: scale(1.15);
+}
+
+.hero-buttons {
+  margin: 0 0 0 -10px;
+}
+
+.projects-button {
+  display: inline-block;
+  padding: 20px 40px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #86c232;
+  color: #000000;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.projects-button:hover {
+  background-color: #d1f79c;
+  color: #000000;
+  transform: scale(1.1); /* Optional: Add a subtle scale effect on hover */
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px 40px;
+    margin: 0 0 0 0;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .intro h1 {
+    line-height: 1.5;
+    font-size: 56px;
+  }
+
+  .intro h2 {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+
+  .intro h3 {
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  .hero-animation {
+    width: 400px;
+    height: 400px;
+  }
+
+  .intro {
+    padding: 0px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  .projects-button {
+    margin: 10px 0;
+    padding: 20px 20px;
+  }
+
+
+  .hero-name p {
+    margin: 0;
+    line-height: 1;
+    font-size: 30px;
+  }
+
+  .socials {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .socials a {
+    width: 80px;
+    height: 80px;
+  }
+
+  .socials img {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .hero {
+    flex-direction: column;
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+
+  .intro {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+  }
+
+  .intro h1 {
+    line-height: 1;
+    font-size: 46px;
+    padding: 10px 0;
+    letter-spacing: 2px;
+  }
+
+  .intro h2 {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .intro-subtitle {
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .intro h3 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .greeting-text {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .projects-button {
+    display: none;
+  }
+
+  .hero-animation {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto; /* Center the image horizontally */
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+  }
+
+  .socials-contact {
+    margin: 0 0 30px 0;
+  }
+
+  .socials {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .socials a {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .socials img {
+    width: 40px;
+  }
+}
