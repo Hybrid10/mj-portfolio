@@ -54,7 +54,7 @@
   border-bottom: 2px solid #000;
   border-right: 2px solid #000;
   position: absolute;
-  top: 50%;
+  top: 41%;
   right: 30px;
   width: 12px;
   height: 12px;
@@ -74,6 +74,7 @@ input[type="checkbox"]:checked ~ .dropdown__items {
 }
 
 input[type="checkbox"]:checked ~ .dropdown__face .dropdown__arrow {
+  top: 51%;
   transform: rotate(-135deg) translateY(50%); /* Flip the arrow when checkbox is checked */
 }
 
