@@ -11,8 +11,8 @@ const ContactForm = ({ className }) => {
         <ContactDetail title="Email" info="marcusjosefsson30@gmail.com" />
         <ContactDetail
           title="Website"
-          info="www.marcusjosefsson.dev"
-          link="https://zafarinabil.netlify.app"
+          info="marcusjosefsson.netlify.app"
+          link="https://marcusjosefsson.netlify.app/"
         />
       </div>
       

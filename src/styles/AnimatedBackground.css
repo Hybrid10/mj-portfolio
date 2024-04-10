@@ -6,6 +6,7 @@
     width: 100vw;
     height: 100vh;
     z-index: -10; /* Ensures the canvas is behind other content */
+    filter: hue-rotate(304deg);
   }
   
   
